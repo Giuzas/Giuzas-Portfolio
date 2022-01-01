@@ -1,9 +1,8 @@
 <template>
   <v-layout column justify-center align-center class="mt-4 pt-2">
     
-
-    <br>
-
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/nMX10ZK/fotosito.jpg" alt="fotosito" border="0"></a>
+    
     <vue-typer class="headline" :repeat="0" text="Giuseppe Nappo"></vue-typer>
     <vue-typer
       :text="text1"
@@ -144,7 +143,7 @@ export default {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .vue-typer .custom.char.typed {
-  color: black;
+  color: orange;
 }
 .vue-typer .custom.char.selected {
   color: orange;
