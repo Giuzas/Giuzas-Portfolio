@@ -11,7 +11,7 @@
       <span class="circle small"></span>
       <br>
       <br>
-      <v-btn large to="/" class="green--text">
+      <v-btn large to="/" class="orange--text">
         <v-icon>arrow_back</v-icon>GO HOME
       </v-btn>
     </div>
@@ -43,7 +43,7 @@ export default {};
 
 .circles p {
   font-size: 240px;
-  color: green;
+  color: orange;
   padding-top: 90px;
   position: relative;
   z-index: 9;

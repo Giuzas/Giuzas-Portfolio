@@ -24,13 +24,13 @@
 export default {
   metaInfo: {
     title: "Portfolio",
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Giuseppe Nappo",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         name: "description",
         content:
-          "Eldin Zaimovic's Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
+          "Giuseppe Nappo Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
       },
       { charset: "utf-8" },
       { property: "og:title", content: "Eldin' Space" },
@@ -44,7 +44,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Eldin Zaimovic's Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
+          "Giuseppe Nappo Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
       }
     ]
   },

@@ -1,29 +1,10 @@
 <template>
   <v-layout column justify-center align-center class="mt-4 pt-2">
-    <VueCompareImage
-      class="hidden-md-and-down"
-      hover
-      :style="{ minWidth: '1300px' }"
-      :sliderLineWidth="sliderLine"
-      :handleSize="hSize"
-      :leftImage="leftImage"
-      :rightImage="rightImage"
-      :sliderPositionPercentage="sliderPosition"
-    />
-    <VueCompareImage
-      class="hidden-lg-and-up"
-      hover
-      :style="{ maxWidth: '400px' }"
-      :sliderLineWidth="sliderLine"
-      :handleSize="hSize"
-      :leftImage="leftImage2"
-      :rightImage="rightImage2"
-      :sliderPositionPercentage="sliderPosition"
-    />
+    
 
     <br>
 
-    <vue-typer class="headline" :repeat="0" text="Eldin Zaimovic"></vue-typer>
+    <vue-typer class="headline" :repeat="0" text="Giuseppe Nappo"></vue-typer>
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -43,18 +24,12 @@
         <v-card-title primary-title>
           <div>
             <h3 class="headline mb-0">
-              <span>About</span>
-              <span class="green--text">Me</span>
+              <span>Su </span>
+              <span class="orange--text">Di me</span>
             </h3>
             <div>
               <p>
-                Hello! I’m Eldin Zaimovic. I'm a front-end developer who
-                is passionate about
-                <span
-                  class="green--text font-weight-bold"
-                >VUE</span>, building great user experiences,
-                fighting for simplicity over complexity and constantly learning.
-                When I'm not coding or making videos, you'll find me traveling across Europe.
+                Scrivi Qui qualocosa su di me
               </p>
             </div>
           </div>
@@ -67,7 +42,7 @@
             fab
             dark
             outline
-            color="green"
+            color="orange"
             :href="icon.href"
             target="_blank"
           >
@@ -83,7 +58,7 @@
             fab
             dark
             outline
-            color="green"
+            color="orange"
             :href="icon.href"
             target="_blank"
           >
@@ -102,10 +77,10 @@ import VueCompareImage from "vue-compare-image";
 export default {
   metaInfo: {
     title: "Home",
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Giuseppe Nappo",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Eldin Zaimovic's Portfolio" },
+      { name: "description", content: "Giuseppe Nappo Portfolio" },
       { charset: "utf-8" },
       { property: "og:title", content: "Eldin' Space" },
       { property: "og:site_name", content: "Eldin' Space" },
@@ -115,7 +90,7 @@ export default {
         property: "og:image",
         content: "https://i.imgur.com/Dcz2PGx.jpg"
       },
-      { property: "og:description", content: "Eldin Zaimovic's Portfolio" }
+      { property: "og:description", content: "Giuseppe Nappo Portfolio" }
     ]
   },
   components: {
@@ -145,11 +120,7 @@ export default {
         },
         { href: "https://www.instagram.com/matricar", icon: "fab fa-instagram" }
       ],
-      text1: ["Front-End Developer", "Web Developer", "Web Designer"],
-      leftImage: "https://i.imgur.com/bU50uS9.jpg",
-      rightImage: "https://i.imgur.com/z3ZoEEw.jpg",
-      leftImage2: "https://i.imgur.com/SXBitjh.jpg",
-      rightImage2: "https://i.imgur.com/Dcz2PGx.jpg",
+      text1: ["Software Developer"],
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
@@ -173,21 +144,21 @@ export default {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .vue-typer .custom.char.typed {
-  color: green;
+  color: black;
 }
 .vue-typer .custom.char.selected {
-  color: #e91e63;
+  color: orange;
 }
 
 .vue-typer .custom.caret {
   animation: rocking 1s ease-in-out 0s infinite;
 }
 .vue-typer .custom.caret.typing {
-  background-color: green;
+  background-color: orange;
 }
 .vue-typer .custom.caret.selecting {
   display: inline-block;
-  background-color: #e91e63;
+  background-color: orange;
 }
 </style>
 

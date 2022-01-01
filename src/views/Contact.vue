@@ -4,40 +4,40 @@
       <v-flex xs12 sm12 md6 lg6 xl6>
         <h2 class="pb-4 mt-2">
           <span>GetIn</span>
-          <span class="green--text">Touch</span>
+          <span class="orange--text">Touch</span>
         </h2>
         <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="green" left>fas fa-map-marker-alt</v-icon>
+          <v-icon large color="orange" left>fas fa-map-marker-alt</v-icon>
           <span>Doboj,&nbsp;</span>
-          <span class="green--text">Bosnia & Herzegovina</span>
+          <span class="orange--text">Bosnia & Herzegovina</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="green" left>fas fa-envelope</v-icon>
+          <v-icon large color="orange" left>fas fa-envelope</v-icon>
           <span>eldin@</span>
-          <span class="green--text">zaimovic.com</span>
+          <span class="orange--text">zaimovic.com</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="green" left>fas fa-phone</v-icon>
+          <v-icon large color="orange" left>fas fa-phone</v-icon>
           <span>+387&nbsp;</span>
-          <span class="green--text">61 596 676</span>
+          <span class="orange--text">61 596 676</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="green" left>fas fa-check</v-icon>
+          <v-icon large color="orange" left>fas fa-check</v-icon>
           <span>Freelance</span>
-          <span class="green--text">Available</span>
+          <span class="orange--text">Available</span>
         </div>
       </v-flex>
 
       <v-flex xs12 sm12 md6 lg6 xl6>
         <h2 class="pb-4 mb-4">
           <span>Contact</span>
-          <span class="green--text">Form</span>
+          <span class="orange--text">Form</span>
         </h2>
 
         <form method="POST" action="https://formspree.io/eldin@zaimovic.com">
           <v-text-field
             name="name"
-            color="green"
+            color="orange"
             background-color="transparent"
             v-model="name"
             :error-messages="nameErrors"
@@ -47,7 +47,7 @@
           ></v-text-field>
           <v-text-field
             type="email"
-            color="green"
+            color="orange"
             background-color="transparent"
             name="email"
             v-model="email"
@@ -57,7 +57,7 @@
             @blur="$v.email.$touch()"
           ></v-text-field>
           <v-textarea
-            color="green"
+            color="orange"
             background-color="transparent"
             :counter="200"
             :error-messages="bodyErrors"
@@ -69,7 +69,7 @@
           <v-btn
             @click="submit"
             type="submit"
-            color="green"
+            color="orange"
             class="white--text"
             :disabled=" (body.length<=20)"
           >SEND MESSAGE</v-btn>
@@ -91,7 +91,7 @@ import {
 export default {
   metaInfo: {
     title: "Contact",
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Giuseppe Nappo",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {

@@ -2,7 +2,7 @@
   <v-container grid-list-xl>
     <h2 class="pl-4">
       <span>Video</span>
-      <span class="green--text">Portfolio</span>
+      <span class="orange--text">Portfolio</span>
     </h2>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-dialog
@@ -44,7 +44,7 @@ import { PlyrVideo } from "vue-plyr";
 export default {
   metaInfo: {
     title: "Video Portfolio",
-    titleTemplate: "%s ← Eldin's Space",
+    titleTemplate: "%s ← Giuseppe Nappo",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
