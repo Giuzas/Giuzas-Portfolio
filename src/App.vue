@@ -34,11 +34,7 @@ export default {
       { property: "og:title", content: "Giuseppe Nappo Portfolio" },
       { property: "og:site_name", content: "Giuseppe Nappo Portfolio" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
-      {
-        property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
-      },
+      { property: "og:url", content: "https://giuseppenappo.it" },
       { property: "og:description", content: "Giuseppe Nappo Portfolio" }
     ]
   },

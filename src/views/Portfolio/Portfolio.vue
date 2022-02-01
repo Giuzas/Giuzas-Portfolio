@@ -27,25 +27,15 @@ export default {
     titleTemplate: "%s ← Giuseppe Nappo",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        name: "description",
-        content:
-          "Giuseppe Nappo Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
-      },
       { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:title", content: " Giuseppe Nappo" },
+      { property: "og:site_name", content: " Giuseppe Nappo" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { property: "og:url", content: "https://giuseppenappo.it" },
       {
         property: "og:image",
-        content: "https://i.imgur.com/Dcz2PGx.jpg"
+        content: " "
       },
-      {
-        property: "og:description",
-        content:
-          "Giuseppe Nappo Portfolio Web Development Video Editing Graphic Design Front-End Advetising"
-      }
     ]
   },
   data() {
@@ -55,15 +45,6 @@ export default {
           src: "https://i.imgur.com/GvTt5GG.png",
           title: "Web"
         },
-
-        {
-          src: "https://i.imgur.com/wXLtLKy.png",
-          title: "Video"
-        },
-        {
-          src: "https://i.imgur.com/g74mGuU.png",
-          title: "Graphic"
-        }
       ]
     };
   }
