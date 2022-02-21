@@ -1,4 +1,4 @@
-<template>
+`<template>
   <div>
     <v-navigation-drawer v-model="drawer" absolute temporary app width="150" height="340">
       <v-list class="pt-4">
@@ -11,7 +11,6 @@
           <v-list-tile-content>
             <v-list-tile-title>RESUME</v-list-tile-title>
           </v-list-tile-content>
-        </v-list-tile>
         </v-list-tile>
         <v-list-tile active-class="orange--text" to="/portfolio">
           <v-list-tile-content>
@@ -71,4 +70,4 @@ export default {
 </script>
 
 <style >
-</style>
+</style>`

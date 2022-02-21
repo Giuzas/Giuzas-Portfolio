@@ -3,7 +3,7 @@ import './plugins/vuetify'
 import App from './App.vue'
 import router from './router'
 import StoryblokVue from 'storyblok-vue'
-import VueAnalytics from 'vue-analytics'
+
 
 
 Vue.config.productionTip = false

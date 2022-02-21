@@ -74,7 +74,6 @@
               </v-flex>
             </v-layout>
           </v-timeline-item>
-
           <v-timeline-item color="orange" small>
             <v-layout pt-3>
               <v-flex xs4>
