@@ -7,12 +7,16 @@
           <v-timeline-item color="orange" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">JAN 2018 -</div>
-                <div class="caption font-weight-bold orange--text">PRESENT</div>
+                <div class="caption font-weight-bold orange--text">
+                  SETTEMBRE 2017 -
+                </div>
+                <div class="caption font-weight-bold orange--text">AD OGGI</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Full Stack Web Development Course</strong>
-                <div class="caption mb-2">freeCodeCamp</div>
+                <strong>Laureando in informatica</strong>
+                <div class="caption mb-2">
+                  Universita degli studi di Napoli Parthenope
+                </div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -20,25 +24,16 @@
           <v-timeline-item color="orange" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">SEP 2007 -</div>
-                <div class="caption font-weight-bold orange--text">MAY 2014</div>
+                <div class="caption font-weight-bold orange--text">
+                  SETTEMBRE 2011 -
+                </div>
+                <div class="caption font-weight-bold orange--text">
+                  LUGLIO 2016
+                </div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Telecommunications Engineering</strong>
-                <div class="caption mb-2">University of East Sarajevo</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="orange" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">SEP 2003 -</div>
-                <div class="caption font-weight-bold orange--text">MAY 2007</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Electrical Technician for Computers</strong>
-                <div class="caption mb-2">Electro-technical school Doboj</div>
+                <strong>Dimploma Finanza e Marketing</strong>
+                <div class="caption mb-2">I.S.I.S Mario Pagano</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -52,37 +47,14 @@
           <v-timeline-item color="orange" small>
             <v-layout pt-3>
               <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">DEC 2016 -</div>
-                <div class="caption font-weight-bold orange--text">PRESENT</div>
+                <div class="caption font-weight-bold orange--text">
+                  SETTEMBRE 2021 -
+                </div>
+                <div class="caption font-weight-bold orange--text">AD OGGI</div>
               </v-flex>
               <v-flex class="pl-2">
-                <strong>Freelance Frontend Developer</strong>
-                <div class="caption mb-2">Remote</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="orange" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">FEB 2018 -</div>
-                <div class="caption font-weight-bold orange--text">JULY 2018</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Teacher for electrical technicians</strong>
-                <div class="caption mb-2">High School Doboj Istok</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-          <v-timeline-item color="orange" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">AUG 2014 -</div>
-                <div class="caption font-weight-bold orange--text">APR 2016</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>IT Technician</strong>
-                <div class="caption mb-2">MFS-EMMAUS</div>
+                <strong>Software Developer </strong>
+                <div class="caption mb-2">Sipos S.r.l</div>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -92,30 +64,62 @@
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
         <h2>
-          <span>Design</span>
-
-          <span class="orange--text">Skills</span>
-        </h2>
-        <br>
-        <strong>Photoshop</strong>
-        <v-progress-linear v-model="buffer1" :buffer-value="bufferValue" color="orange" height="16"></v-progress-linear>
-        <strong>Adobe XD</strong>
-        <v-progress-linear v-model="buffer2" :buffer-value="bufferValue" color="orange" height="16"></v-progress-linear>
-        <strong>Zeplin</strong>
-        <v-progress-linear v-model="buffer3" :buffer-value="bufferValue" color="orange" height="16"></v-progress-linear>
-      </v-flex>
-      <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
-        <h2>
           <span>Coding</span>
           <span class="orange--text">Skills</span>
         </h2>
-        <br>
-        <strong>VUE/NUXT</strong>
-        <v-progress-linear v-model="buffer4" :buffer-value="bufferValue" color="orange" height="16"></v-progress-linear>
+        <br />
+        <br />
+        <strong>VUE</strong>
+        <v-progress-linear
+          v-model="bufferVue"
+          :buffer-value="bufferValue"
+          color="orange"
+          height="16"
+        ></v-progress-linear>
         <strong>HTML/CSS</strong>
-        <v-progress-linear v-model="buffer5" :buffer-value="bufferValue" color="orange" height="16"></v-progress-linear>
+        <v-progress-linear
+          v-model="bufferHtmlCss"
+          :buffer-value="bufferValue"
+          color="orange"
+          height="16"
+        ></v-progress-linear>
         <strong>JavaScript</strong>
-        <v-progress-linear v-model="buffer6" :buffer-value="bufferValue" color="orange" height="16"></v-progress-linear>
+        <v-progress-linear
+          v-model="BufferJavaScript"
+          :buffer-value="bufferValue"
+          color="orange"
+          height="16"
+        ></v-progress-linear>
+        <strong>Node.js</strong>
+        <v-progress-linear
+          v-model="BufferNode"
+          :buffer-value="bufferValue"
+          color="orange"
+          height="16"
+        ></v-progress-linear>
+      </v-flex>
+      <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
+        <strong>C#</strong>
+        <v-progress-linear
+          v-model="bufferC"
+          :buffer-value="bufferValue"
+          color="orange"
+          height="16"
+        ></v-progress-linear>
+        <strong>MongoDb</strong>
+        <v-progress-linear
+          v-model="bufferMongo"
+          :buffer-value="bufferValue"
+          color="orange"
+          height="16"
+        ></v-progress-linear>
+        <strong>MySql</strong>
+        <v-progress-linear
+          v-model="bufferMySql"
+          :buffer-value="bufferValue"
+          color="orange"
+          height="16"
+        ></v-progress-linear>
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn
@@ -164,12 +168,13 @@ export default {
   data() {
     return {
       value: 0,
-      buffer1: 0,
-      buffer2: 0,
-      buffer3: 0,
-      buffer4: 0,
-      buffer5: 0,
-      buffer6: 0,
+      BufferNode: 0,
+      bufferC: 0,
+      bufferMongo: 0,
+      bufferVue: 0,
+      bufferHtmlCss: 0,
+      BufferJavaScript: 0,
+      bufferMySql: 0,
       bufferValue: 100,
       interval: 0
     };
@@ -185,17 +190,16 @@ export default {
   methods: {
     startBuffer() {
       this.interval = setInterval(() => {
-        this.buffer1 = 90;
-        this.buffer2 = 85;
-        this.buffer3 = 80;
-        this.buffer4 = 80;
-        this.buffer5 = 90;
-        this.buffer6 = 70;
+        this.BufferNode = 70;
+        this.bufferC = 60;
+        this.bufferMongo = 40;
+        this.bufferVue = 80;
+        this.bufferHtmlCss = 60;
+        this.BufferJavaScript = 80;
+        this.bufferMySql = 60;
       }, 800);
     }
   }
 };
 </script>
-<style >
-</style>
-
+<style></style>
