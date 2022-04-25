@@ -2,29 +2,20 @@
   <v-container grid-list-xl>
     <v-layout row justify-center align-center wrap class="mt-4 pt-2">
       <v-flex xs12 sm12 md6 lg6 xl6>
-        <h2 class="pb-4 mt-2">
-          <span>GetIn</span>
-          <span class="orange--text">Touch</span>
-        </h2>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="orange" left>fas fa-map-marker-alt</v-icon>
-          <span>Doboj,&nbsp;</span>
-          <span class="orange--text">Bosnia & Herzegovina</span>
+          <span>Napoli,&nbsp;</span>
+          <span class="orange--text">Italia</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="orange" left>fas fa-envelope</v-icon>
-          <span>eldin@</span>
-          <span class="orange--text">zaimovic.com</span>
+          <span>giuseppe.nappo@</span>
+          <span class="orange--text">giuseppenappo.it</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="orange" left>fas fa-phone</v-icon>
-          <span>+387&nbsp;</span>
-          <span class="orange--text">61 596 676</span>
-        </div>
-        <div class="py-4 subheading font-weight-bold">
-          <v-icon large color="orange" left>fas fa-check</v-icon>
-          <span>Freelance</span>
-          <span class="orange--text">Available</span>
+          <span>+392&nbsp;</span>
+          <span class="orange--text">64 03 560</span>
         </div>
       </v-flex>
 
@@ -34,7 +25,7 @@
           <span class="orange--text">Form</span>
         </h2>
 
-        <form method="POST" action="https://formspree.io/eldin@zaimovic.com">
+        <form action="https://formspree.io/f/xrgjoepd" method="POST">
           <v-text-field
             name="name"
             color="orange"
@@ -71,8 +62,9 @@
             type="submit"
             color="orange"
             class="white--text"
-            :disabled=" (body.length<=20)"
-          >SEND MESSAGE</v-btn>
+            :disabled="body.length <= 20"
+            >SEND MESSAGE</v-btn
+          >
           <v-btn @click="clear">clear</v-btn>
         </form>
       </v-flex>
@@ -82,6 +74,7 @@
 
 <script>
 import { validationMixin } from "vuelidate";
+
 import {
   required,
   maxLength,
@@ -163,5 +156,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

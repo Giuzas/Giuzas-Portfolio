@@ -123,7 +123,7 @@
       </v-flex>
       <div class="mt-4 pt-2">
         <v-btn
-          href="https://docs.google.com/document/d/1WSR42FEgUahJuR_RArW1wz7TfUBlgj13zekRidmQgs4/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1KK7NZIvHS3LXMipEZ8SLffja2vt-Uw37AAcWp7VHRNU/edit?usp=sharing"
           target="_blank"
           color="orange"
           dark
