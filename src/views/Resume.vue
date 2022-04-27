@@ -69,7 +69,7 @@
         </h2>
         <br />
         <br />
-        <strong>VUE</strong>
+        <strong>Vue.js</strong>
         <v-progress-linear
           v-model="bufferVue"
           :buffer-value="bufferValue"
@@ -142,28 +142,6 @@ export default {
   metaInfo: {
     title: "Resume",
     titleTemplate: "%s ← Giuseppe Nappo",
-    meta: [
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        name: "description",
-        content:
-          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
-      },
-      { charset: "utf-8" },
-      { property: "og:title", content: " Giuseppe Nappo" },
-      { property: "og:site_name", content: " Giuseppe Nappo" },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://giuseppenappo.it" },
-      {
-        property: "og:image",
-        content: " "
-      },
-      {
-        property: "og:description",
-        content:
-          "Vue NUXT HTML CSS JavaScript Design Adobe XD Photoshop Coding Skills Resume Work Web Developer Front-End"
-      }
-    ]
   },
   data() {
     return {
