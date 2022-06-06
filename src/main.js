@@ -15,11 +15,4 @@ new Vue({
 }).$mount('#app')
 
 Vue.use(StoryblokVue)
-Vue.use(VueAnalytics, {
-  id: 'UA-139190314-1',
-  router,
-  debug: {
-    enabled: !isProd,
-    sendHitTask: isProd
-  }
-})
+

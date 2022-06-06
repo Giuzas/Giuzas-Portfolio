@@ -101,7 +101,7 @@
                 l'università Parthenope di Napoli. L'informatica è entrata
                 qualche anno fa nella mia vita e l'ha stravolta, diventando una
                 delle mie più grandi passioni oltre a diventare il mio lavoro.
-                Mi piace sempre migliorarmi come sviluppatore e affronto ogni
+                Mi piace sempre migliorare come sviluppatore e affronto ogni
                 problematica come una nuova sfida senza tirarmi mai indietro
                 anzi trovo che questa sia la parte più bella del mio lavoro.
               </p>
