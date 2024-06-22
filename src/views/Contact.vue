@@ -9,8 +9,8 @@
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="orange" left>fas fa-envelope</v-icon>
-          <span>giuseppe.nappo@</span>
-          <span class="orange--text">giuseppenappo.it</span>
+          <span>giuseppe.nappo01@</span>
+          <span class="orange--text">gmail.com</span>
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="orange" left>fas fa-phone</v-icon>
@@ -26,45 +26,14 @@
         </h2>
 
         <form action="https://formspree.io/f/xrgjoepd" method="POST">
-          <v-text-field
-            name="name"
-            color="orange"
-            background-color="transparent"
-            v-model="name"
-            :error-messages="nameErrors"
-            label="Name"
-            required
-            @blur="$v.name.$touch()"
-          ></v-text-field>
-          <v-text-field
-            type="email"
-            color="orange"
-            background-color="transparent"
-            name="email"
-            v-model="email"
-            :error-messages="emailErrors"
-            label="E-mail"
-            required
-            @blur="$v.email.$touch()"
-          ></v-text-field>
-          <v-textarea
-            color="orange"
-            background-color="transparent"
-            :counter="200"
-            :error-messages="bodyErrors"
-            v-model="body"
-            label="Textarea"
-            name="body"
-            @blur="$v.body.$touch()"
-          ></v-textarea>
-          <v-btn
-            @click="submit"
-            type="submit"
-            color="orange"
-            class="white--text"
-            :disabled="body.length <= 20"
-            >SEND MESSAGE</v-btn
-          >
+          <v-text-field name="name" color="orange" background-color="transparent" v-model="name"
+            :error-messages="nameErrors" label="Name" required @blur="$v.name.$touch()"></v-text-field>
+          <v-text-field type="email" color="orange" background-color="transparent" name="email" v-model="email"
+            :error-messages="emailErrors" label="E-mail" required @blur="$v.email.$touch()"></v-text-field>
+          <v-textarea color="orange" background-color="transparent" :counter="200" :error-messages="bodyErrors"
+            v-model="body" label="Textarea" name="body" @blur="$v.body.$touch()"></v-textarea>
+          <v-btn @click="submit" type="submit" color="orange" class="white--text" :disabled="body.length <= 20">SEND
+            MESSAGE</v-btn>
           <v-btn @click="clear">clear</v-btn>
         </form>
       </v-flex>
@@ -90,7 +59,7 @@ export default {
       {
         name: "description",
         content:
-          "Eldin Zaimovic's Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
+          ""
       },
       { charset: "utf-8" },
       { property: "og:title", content: " Giuseppe Nappo" },
@@ -100,7 +69,7 @@ export default {
       {
         property: "og:description",
         content:
-          "Eldin Zaimovic's Contact Doboj Bosnia and Herzegovina Freelance Get in Touch ContactMe"
+          ""
       }
     ]
   },

@@ -7,16 +7,6 @@
             <v-list-tile-title>HOME</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile active-class="orange--text" to="/resume">
-          <v-list-tile-content>
-            <v-list-tile-title>RESUME</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-        <v-list-tile active-class="orange--text" to="/portfolio">
-          <v-list-tile-content>
-            <v-list-tile-title>PORTFOLIO</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
         <v-list-tile active-class="orange--text" to="/contact">
           <v-list-tile-content>
             <v-list-tile-title>CONTACT</v-list-tile-title>
@@ -31,19 +21,11 @@
         <span class="orange--text">Nappo</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn @click="changeTheme" depressed small icon class="hidden-md-and-up">
-        <v-icon v-if="goDark==true">fas fa-sun</v-icon>
-        <v-icon v-else>fas fa-moon</v-icon>
-      </v-btn>
+
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/" active-class="orange--text headline">Home</v-btn>
-        <v-btn flat to="/resume" active-class="orange--text headline">Resume</v-btn>
-        <v-btn flat to="/portfolio" active-class="orange--text headline">Portfolio</v-btn>
         <v-btn flat to="/contact" active-class="orange--text headline">Contact</v-btn>
-        <v-btn @click="changeTheme" depressed small icon>
-          <v-icon v-if="goDark==true">fas fa-sun</v-icon>
-          <v-icon v-else>fas fa-moon</v-icon>
-        </v-btn>
+
       </v-toolbar-items>
     </v-toolbar>
   </div>
@@ -69,5 +51,4 @@ export default {
 };
 </script>
 
-<style >
-</style>`
+<style></style>`

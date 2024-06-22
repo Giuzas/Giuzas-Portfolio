@@ -20,12 +20,7 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Contact.vue")
     },
-    {
-      path: "/resume",
-      name: "resume",
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/Resume.vue")
-    },
+
     {
       path: "/portfolio",
       name: "portfolio",

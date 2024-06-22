@@ -1,183 +1,127 @@
 <template>
-  <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-    <v-flex xs12 sm12 md5 lg6 xl6 class="mt-4 pt-4">
-      <h2 class="mb-4 pl-4 pt-2">Education</h2>
-      <v-card-text class="py-0">
-        <v-timeline align-top dense>
-          <v-timeline-item color="orange" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">
-                  SETTEMBRE 2017 -
-                </div>
-                <div class="caption font-weight-bold orange--text">AD OGGI</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Laureando in informatica</strong>
-                <div class="caption mb-2">
-                  Universita degli studi di Napoli Parthenope
-                </div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-
-          <v-timeline-item color="orange" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">
-                  SETTEMBRE 2011 -
-                </div>
-                <div class="caption font-weight-bold orange--text">
-                  LUGLIO 2016
-                </div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Dimploma Finanza e Marketing</strong>
-                <div class="caption mb-2">I.S.I.S Mario Pagano</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card-text>
-    </v-flex>
-    <v-flex xs12 sm12 md4 lg6 xl6 class="mt-4 pt-2">
-      <h2 class="mb-4 pl-4">Experience</h2>
-      <v-card-text class="py-0">
-        <v-timeline align-top dense>
-          <v-timeline-item color="orange" small>
-            <v-layout pt-3>
-              <v-flex xs4>
-                <div class="caption font-weight-bold orange--text">
-                  SETTEMBRE 2021 -
-                </div>
-                <div class="caption font-weight-bold orange--text">AD OGGI</div>
-              </v-flex>
-              <v-flex class="pl-2">
-                <strong>Software Developer </strong>
-                <div class="caption mb-2">Sipos S.r.l</div>
-              </v-flex>
-            </v-layout>
-          </v-timeline-item>
-        </v-timeline>
-      </v-card-text>
-    </v-flex>
-    <v-layout row justify-center align-center wrap class="mt-4 pt-2">
-      <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
-        <h2>
-          <span>Coding</span>
-          <span class="orange--text">Skills</span>
-        </h2>
-        <br />
-        <br />
-        <strong>Vue.js</strong>
-        <v-progress-linear
-          v-model="bufferVue"
-          :buffer-value="bufferValue"
-          color="orange"
-          height="16"
-        ></v-progress-linear>
-        <strong>HTML/CSS</strong>
-        <v-progress-linear
-          v-model="bufferHtmlCss"
-          :buffer-value="bufferValue"
-          color="orange"
-          height="16"
-        ></v-progress-linear>
-        <strong>JavaScript</strong>
-        <v-progress-linear
-          v-model="BufferJavaScript"
-          :buffer-value="bufferValue"
-          color="orange"
-          height="16"
-        ></v-progress-linear>
-        <strong>Node.js</strong>
-        <v-progress-linear
-          v-model="BufferNode"
-          :buffer-value="bufferValue"
-          color="orange"
-          height="16"
-        ></v-progress-linear>
-      </v-flex>
-      <v-flex xs12 sm12 md4 lg5 xl5 class="mx-2 pt-4">
-        <strong>C#</strong>
-        <v-progress-linear
-          v-model="bufferC"
-          :buffer-value="bufferValue"
-          color="orange"
-          height="16"
-        ></v-progress-linear>
-        <strong>MongoDb</strong>
-        <v-progress-linear
-          v-model="bufferMongo"
-          :buffer-value="bufferValue"
-          color="orange"
-          height="16"
-        ></v-progress-linear>
-        <strong>MySql</strong>
-        <v-progress-linear
-          v-model="bufferMySql"
-          :buffer-value="bufferValue"
-          color="orange"
-          height="16"
-        ></v-progress-linear>
-      </v-flex>
-      <div class="mt-4 pt-2">
-        <v-btn
-          href="https://docs.google.com/document/d/1KK7NZIvHS3LXMipEZ8SLffja2vt-Uw37AAcWp7VHRNU/edit?usp=sharing"
-          target="_blank"
-          color="orange"
-          dark
-          large
-        >
-          Download Resume
-          <v-icon right dark>fas fa-file-download</v-icon>
-        </v-btn>
-      </div>
-    </v-layout>
-  </v-layout>
+    <div class="portfolio">
+        <header>
+            <h1>Presentazione</h1>
+        </header>
+        <main>
+            <section id="about">
+                <h2 style="color: orange">Chi Sono</h2>
+                <p>
+                    Mi chiamo {{ tuoNome }} ho {{ anni }} anni e sono uno sviluppatore di software con una
+                    forte passione per le tecnologie moderne e innovative. La mia avventura
+                    nel mondo della programmazione è iniziata grazie a un caro amico che
+                    mi ha ispirato e guidato, trasmettendomi il suo entusiasmo e le sue
+                    conoscenze. Grazie al suo supporto, ho scoperto il mio amore per lo
+                    sviluppo software e ho deciso di intraprendere questa carriera con
+                    dedizione e impegno.
+                </p>
+            </section>
+            <section id="work">
+                <h2 style="color: orange">Cosa Faccio</h2>
+                <p>
+                    Attualmente, lavoro presso {{ nomeAzienda }} dove mi occupo dello
+                    sviluppo e della manutenzione di soluzioni software avanzate per la
+                    centralizzazione dei dati. Il mio lavoro si concentra sulla raccolta e
+                    sullo smistamento di informazioni utilizzando tecnologie all'avanguardia
+                    come:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Message Queuing:</strong> RabbitMQ
+                    </li>
+                    <li>
+                        <strong>Restful Services:</strong> NodeJS + Express
+                    </li>
+                    <li>
+                        <strong>Database NoSQL:</strong> MongoDB
+                    </li>
+                </ul>
+                <p>
+                    L'applicazione su cui lavoro è progettata con un'architettura a
+                    microservizi, distribuita attraverso Kubernetes. Utilizzo principalmente
+                    il linguaggio Typescript per sviluppare soluzioni robuste e scalabili.
+                    Inoltre, per rendere i dati facilmente accessibili, ho contribuito allo sviluppo di una
+                    Single Page Application (SPA) utilizzando Vue.js.
+                </p>
+            </section>
+            <section id="skills">
+                <h2 style="color: orange">Competenze</h2>
+                <ul>
+                    <li>
+                        <strong>Linguaggi di Programmazione:</strong> Typescript, JavaScript
+                    </li>
+                    <li>
+                        <strong>Frameworks e Librerie:</strong> NodeJS, Express, Vue.js
+                    </li>
+                    <li>
+                        <strong>Database:</strong> MongoDB, NoSQL
+                    </li>
+                    <li>
+                        <strong>Architettura:</strong> Microservizi
+                    </li>
+                    <li>
+                        <strong>Tecnologie di Messaging:</strong> RabbitMQ
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Grazie per aver visitato il mio portfolio. Se sei interessato a
+                collaborare o vuoi saperne di più su di me e sul mio lavoro, non esitare
+                a contattarmi!
+            </p>
+        </footer>
+    </div>
 </template>
 
 <script>
 export default {
-  metaInfo: {
-    title: "Resume",
-    titleTemplate: "%s ← Giuseppe Nappo",
-  },
-  data() {
-    return {
-      value: 0,
-      BufferNode: 0,
-      bufferC: 0,
-      bufferMongo: 0,
-      bufferVue: 0,
-      bufferHtmlCss: 0,
-      BufferJavaScript: 0,
-      bufferMySql: 0,
-      bufferValue: 100,
-      interval: 0
-    };
-  },
-  mounted() {
-    this.startBuffer();
-  },
-
-  beforeDestroy() {
-    clearInterval(this.interval);
-  },
-
-  methods: {
-    startBuffer() {
-      this.interval = setInterval(() => {
-        this.BufferNode = 70;
-        this.bufferC = 60;
-        this.bufferMongo = 40;
-        this.bufferVue = 80;
-        this.bufferHtmlCss = 60;
-        this.BufferJavaScript = 80;
-        this.bufferMySql = 60;
-      }, 800);
+    name: 'Resume',
+    data() {
+        return {
+            anni: new Date().getFullYear() - 1997,
+            tuoNome: "Giuseppe Nappo",
+            nomeAzienda: 'Sipos S.r.l'
+        };
     }
-  }
 };
 </script>
-<style></style>
+
+<style scoped>
+.portfolio {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+</style>
