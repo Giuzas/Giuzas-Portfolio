@@ -17,14 +17,14 @@
                 <v-card-text class="py-0">
                   <v-timeline align-top dense>
                     <v-timeline-item color="orange" small>
-                      <v-layout pt-3>
-                        <v-flex xs4>
+                      <v-layout row wrap pt-3>
+                        <v-flex xs12 sm4 class="pb-2">
                           <div class="caption font-weight-bold orange--text">
                             SETTEMBRE 2017 -
                           </div>
                           <div class="caption font-weight-bold orange--text">PERCORSO NON TERMINATO</div>
                         </v-flex>
-                        <v-flex class="pl-2">
+                        <v-flex xs12 sm8 class="pl-2">
                           <strong>Studente Informatica</strong>
                           <div class="caption mb-2">
                             Universita degli studi di Napoli Parthenope
@@ -34,8 +34,8 @@
                     </v-timeline-item>
 
                     <v-timeline-item color="orange" small>
-                      <v-layout pt-3>
-                        <v-flex xs4>
+                      <v-layout row wrap pt-3>
+                        <v-flex xs12 sm4 class="pb-2">
                           <div class="caption font-weight-bold orange--text">
                             SETTEMBRE 2011 -
                           </div>
@@ -43,7 +43,7 @@
                             LUGLIO 2016
                           </div>
                         </v-flex>
-                        <v-flex class="pl-2">
+                        <v-flex xs12 sm8 class="pl-2">
                           <strong>Diploma Finanza e Marketing</strong>
                           <div class="caption mb-2">I.S.I.S Mario Pagano</div>
                         </v-flex>
@@ -61,14 +61,14 @@
                 <v-card-text class="py-0">
                   <v-timeline align-top dense>
                     <v-timeline-item color="orange" small>
-                      <v-layout pt-3>
-                        <v-flex xs4>
+                      <v-layout row wrap pt-3>
+                        <v-flex xs12 sm4 class="pb-2">
                           <div class="caption font-weight-bold orange--text">
                             SETTEMBRE 2021 -
                           </div>
                           <div class="caption font-weight-bold orange--text">AD OGGI</div>
                         </v-flex>
-                        <v-flex class="pl-2">
+                        <v-flex xs12 sm8 class="pl-2">
                           <strong>Software Developer</strong>
                           <div class="caption mb-2">Sipos S.r.l</div>
                         </v-flex>
@@ -77,19 +77,20 @@
                   </v-timeline>
                 </v-card-text>
               </v-card>
-
             </v-flex>
-
           </v-layout>
-
         </v-container>
 
 
         <v-card-actions class="justify-center">
-          <v-btn v-for="icon in icons" :key="icon.icon" fab dark outline color="orange" :href="icon.href"
-            target="_blank">
-            <v-icon dark style="display: inherit;">{{ icon.icon }}</v-icon>
-          </v-btn>
+          <v-tooltip v-for="icon in icons" :key="icon.icon" bottom>
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn fab dark outline color="orange" :href="icon.href" target="_blank" v-bind="attrs" v-on="on">
+                <v-icon dark style="display: inherit;">{{ icon.icon }}</v-icon>
+              </v-btn>
+            </template>
+            <span>{{ icon.description }}</span>
+          </v-tooltip>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -128,17 +129,19 @@ export default {
   data() {
     return {
       icons: [
-        { href: "/CV_GIUSEPPE_NAPPO.pdf", icon: "fas fa-file-download" },
-        { href: "https://github.com/Giuzas", icon: "fab fa-github" },
+        { href: "/CV_GIUSEPPE_NAPPO.pdf", icon: "fas fa-file-download", description: "Scarica CV" },
+        { href: "https://github.com/Giuzas", icon: "fab fa-github", description: "Github" },
         {
-          href: "https://www.linkedin.com/in/giuseppenappo97/",
-          icon: "fab fa-linkedin-in"
+          href: "https://www.linkedin.com/in/gnappo97/",
+          icon: "fab fa-linkedin-in",
+          description: "Linkedin"
         },
         {
           href: "https://www.facebook.com/giuseppe.nappo.737",
-          icon: "fab fa-facebook-f"
+          icon: "fab fa-facebook-f",
+          description: "Facebook"
         },
-        { href: "https://www.instagram.com/giuzas/", icon: "fab fa-instagram" },
+        { href: "https://www.instagram.com/giuzas/", icon: "fab fa-instagram", description: "Instagram" },
 
       ],
       text1: ["Software Developer"],
