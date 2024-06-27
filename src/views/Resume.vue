@@ -7,7 +7,7 @@
             <section id="about">
                 <h2 style="color: orange">Chi Sono</h2>
                 <p>
-                    Mi chiamo {{ tuoNome }} ho {{ anni }} anni e sono uno sviluppatore di software con una
+                    Mi chiamo {{ tuoNome }} ho {{ anni }} anni e sono uno sviluppatore software con una
                     forte passione per le tecnologie moderne e innovative. La mia avventura
                     nel mondo della programmazione è iniziata grazie a un caro amico che
                     mi ha ispirato e guidato, trasmettendomi il suo entusiasmo e le sue

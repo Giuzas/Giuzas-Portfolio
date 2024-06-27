@@ -1,10 +1,7 @@
 <template>
   <v-layout column justify-center align-center class="mt-4 pt-2">
-
     <v-flex xs12 sm6 md4 lg4 xl4>
       <v-card flat color="transparent">
-
-
         <v-card-title primary-title>
           <Resume></Resume>
         </v-card-title>
@@ -94,15 +91,18 @@
         </v-card-actions>
       </v-card>
     </v-flex>
-
-
   </v-layout>
 </template>
 
 <script>
 import { VueTyper } from "vue-typer";
-import VueCompareImage from "vue-compare-image";
 import Resume from "./Resume.vue";
+import axios from 'axios';
+import { initializeApp } from "firebase/app";
+import { getFirestore, setDoc, doc } from "firebase/firestore";
+
+
+
 
 export default {
   metaInfo: {
@@ -122,12 +122,97 @@ export default {
   components: {
     "vue-typer": VueTyper,
     Resume: Resume,
-    VueCompareImage
+  },
+
+  beforeCreate: function () {
+
+    if (this.$session && !Object.keys(this.$session.getAll()).length) {
+      this.$session.start()
+    }
+  },
+  created() {
+
+    if (this.$session && !Object.keys(this.$session.getAll()).length) {
+      this.$session.start()
+    }
   },
 
 
+  mounted() {
+
+    const firebaseConfig = {
+      apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+      authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.env.VUE_APP_FIREBASE_DATABASE_URL,
+      projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+      storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.VUE_APP_FIREBASE_APP_ID,
+      measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID
+    };
+
+    this.app = initializeApp(firebaseConfig);
+    this.db = getFirestore(this.app);
+    setTimeout(() => this.getLocation(), 3000)
+
+  },
+  methods: {
+    getLocation() {
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          this.successGeolocation,
+          this.errorGeolocation
+        );
+      } else {
+        console.log('Geolocalizzazione non supportata dal browser.');
+      }
+    },
+    async successGeolocation(position) {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+
+
+      if (!lat && !lon) throw new Error("LATITUDINE O LONGITUDINE NON ESISTENTI")
+
+      try {
+        const response = await axios.get(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
+        if (response.data && response.data.address) {
+          await this.saveVisitorInfo(response.data);
+        } else {
+          console.log('Impossibile determinare la posizione.');
+        }
+      } catch (error) {
+        console.log('Errore nel recupero della posizione.');
+      }
+    },
+    errorGeolocation() {
+      console.log('Impossibile determinare la posizione.');
+    },
+    async saveVisitorInfo(data) {
+      try {
+        if (!this.db) {
+          throw new Error("Database is not defined");
+        }
+        const sessionId = this.$session.id();
+        if (!sessionId) {
+          throw new Error("Session ID is not defined");
+        }
+        const docRef = doc(this.db, "visitors", sessionId);
+        await setDoc(docRef, data, { merge: true });
+      } catch (error) {
+        console.log(error);
+      }
+
+
+    }
+
+  },
+
   data() {
     return {
+      db: null,
+      app: null,
       icons: [
         { href: "/CV_GIUSEPPE_NAPPO.pdf", icon: "fas fa-file-download", description: "Scarica CV" },
         { href: "https://github.com/Giuzas", icon: "fab fa-github", description: "Github" },
