@@ -14,8 +14,8 @@
         </div>
         <div class="py-4 subheading font-weight-bold">
           <v-icon large color="orange" left>fas fa-phone</v-icon>
-          <span>+392&nbsp;</span>
-          <span class="orange--text">64 03 560</span>
+          <span>+39&nbsp;</span>
+          <span class="orange--text">379 207 3500</span>
         </div>
       </v-flex>
 
